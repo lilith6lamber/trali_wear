@@ -1,0 +1,132 @@
+.footer {
+    background: $footerbg;
+    padding: 85px 0;
+    text-align: center;
+    a:hover {
+        opacity: 0.7;
+    }
+    &-title {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    &-link {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 24px;
+        color: #666;
+        margin-bottom: 5px;
+    }
+    &-links-group {
+        margin-bottom: 30px;
+    }
+    &_nav {
+        &-item {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+            padding: 0 5px;
+            text-transform: uppercase;
+        }
+    }
+    &_contacts {
+        text-align: left;
+        margin: 30px 0;
+        .wrapper {
+            .icon {
+                width: 41px;
+                height: 41px;
+                margin-right: 10px;
+            }
+            .call {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 12px;
+                text-transform: uppercase;
+            }
+            .tel {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 24px;
+            }
+        }
+        &-hours {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+            color: #666;
+            margin: 17px 0 30px;
+        }
+        &-socials {
+            &_item {
+                margin-right: 30px;
+                font-size: 20px;
+                color: $blue;
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &_payment {
+        &-list {
+            margin-top: -10px;
+            &_item {
+                margin-right: 20px;
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 575.98px) {
+    .footer {
+        &_nav {
+            &-item {
+                padding-left: 0;
+                padding-right: 24px;
+                margin-right: 20px;
+                position: relative;
+                &:after {
+                    content: 'I';
+                    right: 0;
+                    top: 0;
+                    position: absolute;
+                    color: #E5E5E5;
+                }
+                &:last-of-type {
+                    margin-right: 0; 
+                    padding-right: 0;
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 767.98px) {
+    .footer {
+        text-align: left;
+    }
+}
+
+@media (min-width: 991.98px) {
+    .footer {
+        padding: 176px 0 164px;
+        &_contacts {
+            margin: 0;
+            &-hours {
+                text-align: left; 
+            }
+        }
+        &_nav {
+            margin-bottom: 60px;
+        }
+    }
+}

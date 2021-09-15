@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: #fff;
+    color: $text;
+    font-family: 'Hind';
+    line-height: 0;
+}
+body, html {
+    overflow-x: hidden;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+}
+a, button {
+    transition: .2s;
+}
+button, input {
+    background: transparent;
+    border: none;
+}
+ul {
+    list-style: none;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+img, span {
+    display: block;
+}
