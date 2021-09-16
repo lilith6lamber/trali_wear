@@ -5,6 +5,22 @@
     outline: none;
 }
 
+#loadingScreen {
+    width: 100vw;
+    height: 100vh;
+    z-index: 50000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #EEF2F5 url('../../img/icons/loader.gif') no-repeat center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    &.visible {
+        visibility: visible;
+        opacity: 1;
+    }
+}
 
 html {
     scroll-behavior: smooth;
@@ -14,6 +30,10 @@ body {
     color: $text;
     font-family: 'Hind';
     line-height: 0;
+    visibility: hidden;
+    &.visible {
+        visibility: visible;
+    }
 }
 body, html {
     overflow-x: hidden;
